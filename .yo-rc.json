@@ -1,0 +1,52 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "org.muellners.finscale.core",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.9.1",
+    "applicationType": "microservice",
+    "baseName": "core",
+    "packageName": "org.muellners.finscale.core",
+    "packageFolder": "org/muellners/finscale/core",
+    "serverPort": "9006",
+    "authenticationType": "uaa",
+    "uaaBaseName": "identity",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "gradle",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ZGQzYjhmY2M3ODdjZDMxZDRjYzllNDVkOGVmODJhNDk2ZjU2MzMzMDhiYTNmYjIxNzNiZTQxOWFkN2RhMDE1OTdlYzI2NGE2ZjViZmE5YTJmOGM1NTI0ZDY3MTBiOWY3YzY5OWFlZGEwYTZhZWI4NGY5OTBkM2M0Njc3ZWY1OTM=",
+    "embeddableLaunchScript": false,
+    "creationTimestamp": 1593236709868,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-kotlin",
+        "version": "1.8.0"
+      }
+    ],
+    "enableTranslation": true,
+    "clientPackageManager": "npm",
+    "nativeLanguage": "en",
+    "languages": ["en"],
+    "blueprints": [
+      {
+        "name": "generator-jhipster-kotlin",
+        "version": "1.8.0"
+      }
+    ],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
