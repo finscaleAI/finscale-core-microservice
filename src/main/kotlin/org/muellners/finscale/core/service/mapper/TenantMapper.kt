@@ -2,7 +2,7 @@ package org.muellners.finscale.core.service.mapper
 
 import org.mapstruct.Mapper
 import org.muellners.finscale.core.domain.Tenant
-import org.muellners.finscale.core.service.dto.TenantDTO
+import org.muellners.finscale.multitenancy.service.dto.TenantDTO
 
 /**
  * Mapper for the entity [Tenant] and its DTO [TenantDTO].

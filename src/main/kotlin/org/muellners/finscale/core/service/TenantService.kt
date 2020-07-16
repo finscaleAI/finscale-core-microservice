@@ -1,6 +1,6 @@
 package org.muellners.finscale.core.service
 import java.util.Optional
-import org.muellners.finscale.core.service.dto.TenantDTO
+import org.muellners.finscale.multitenancy.service.dto.TenantDTO
 
 /**
  * Service Interface for managing [org.muellners.finscale.core.domain.Tenant].

@@ -3,6 +3,7 @@ package org.muellners.finscale.core.service.dto
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 import org.muellners.finscale.core.web.rest.equalsVerifier
+import org.muellners.finscale.multitenancy.service.dto.TenantDTO
 
 class TenantDTOTest {
 

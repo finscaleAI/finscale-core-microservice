@@ -4,8 +4,8 @@ import java.util.Optional
 import org.muellners.finscale.core.domain.Tenant
 import org.muellners.finscale.core.repository.TenantRepository
 import org.muellners.finscale.core.service.TenantService
-import org.muellners.finscale.core.service.dto.TenantDTO
 import org.muellners.finscale.core.service.mapper.TenantMapper
+import org.muellners.finscale.multitenancy.service.dto.TenantDTO
 import org.slf4j.LoggerFactory
 import org.springframework.data.redis.connection.stream.ObjectRecord
 import org.springframework.data.redis.connection.stream.StreamRecords
@@ -22,6 +22,7 @@ class TenantServiceImpl(
     private val tenantRepository: TenantRepository,
     private val tenantMapper: TenantMapper,
     private val redisTemplate: StringRedisTemplate
+//    private val redisTemplate: RedisTemplate<String, Tenant>
 ) : TenantService {
 
     private val log = LoggerFactory.getLogger(javaClass)
@@ -44,6 +45,18 @@ class TenantServiceImpl(
 
         return tenantDTO
     }
+
+//    override fun save(tenantDTO: TenantDTO): TenantDTO {
+//        log.debug("Request to save Tenant : {}", tenantDTO)
+//
+//        var tenant = tenantMapper.toEntity(tenantDTO)
+//        tenant = tenantRepository.save(tenant)
+//        val tenantRecord: ObjectRecord<String, Tenant> = StreamRecords.newRecord()
+//            .ofObject(tenant).withStreamKey("core:tenants")
+//        this.redisTemplate.opsForStream<String, Tenant>().add(tenantRecord)
+//
+//        return tenantMapper.toDto(tenant)
+//    }
 
     /**
      * Get all the tenants.

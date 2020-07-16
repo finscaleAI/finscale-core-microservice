@@ -6,8 +6,8 @@ import java.net.URI
 import java.net.URISyntaxException
 import javax.validation.Valid
 import org.muellners.finscale.core.service.TenantService
-import org.muellners.finscale.core.service.dto.TenantDTO
 import org.muellners.finscale.core.web.rest.errors.BadRequestAlertException
+import org.muellners.finscale.multitenancy.service.dto.TenantDTO
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.http.ResponseEntity

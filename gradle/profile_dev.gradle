@@ -7,6 +7,7 @@ configurations {
 
 dependencies {
     developmentOnly "org.springframework.boot:spring-boot-devtools"
+    implementation "org.muellners.finscale.multitenancy:multitenancy:0.0.1-SNAPSHOT"
     implementation "com.h2database:h2"
 }
 
